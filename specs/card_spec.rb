@@ -40,7 +40,7 @@ describe Card do
     end
 
     it "Can retrieve the value of the card using a `.suit`." do
-      # ensure that `.value works as expected returning the symbol of the suit`
+      # ensure that `.suit works as expected returning the symbol of the suit`
 
     end
   end
