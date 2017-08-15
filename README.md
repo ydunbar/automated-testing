@@ -23,6 +23,13 @@ Rakefile
   -spec_helper.rb
 ```
 
+The `lib` folder contains the two classes you will be working with, `card.rb` and `deck.rb`.  These two classes represent playing cards and a deck for use in a card game app.  We will be writing these classes in a TDD fashion.  
+
+The `specs` folder contains the test cases for each class.  You will start by making the existing tests pass, in Wave 2, begin adding your own tests.  
+
+The `Rakefile` enables you to use the `rake` command to run the automated tests.  It will run minitest through all the files in the `specs` folder ending with `_spec.rb`.  
+
+
 ## Wave 1 - Getting Card To Pass
 
 Right now you have a `Card` class and an assortment of specs.  Your first job is to read the first set of specs and write the Card class to satisfy them.
