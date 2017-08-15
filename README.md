@@ -9,6 +9,20 @@ This exercise is designed to enable you to:
 
 You've been introduced to TDD and testing.  Now we're going to be writing tests.  We'll start by writing code to satisfy existing tests, and then fill in empty specs to write our own tests, finish by designing a few tests yourself.
 
+## File Structure
+
+Your project has the following Structure
+```
+Rakefile
+-lib
+  -card.rb
+  -deck.rb
+-specs
+  -card_spec.rb
+  -deck_spec.rb
+  -spec_helper.rb
+```
+
 ## Wave 1 - Getting Card To Pass
 
 Right now you have a `Card` class and an assortment of specs.  Your first job is to read the first set of specs and write the Card class to satisfy them.
