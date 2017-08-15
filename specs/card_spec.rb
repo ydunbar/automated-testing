@@ -22,7 +22,7 @@ describe Card do
 
   describe "Testing to_s" do
 
-    it "to_s returns a readable String value logically for values 2-9" do
+    it "to_s returns a readable String value logically for values 2-10" do
       # Test to ensure that to_s works for cards values 2-10
       # for example:  "2 of diamonds"
     end
