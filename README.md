@@ -44,7 +44,18 @@ You'll have noticed that some of the `it` blocks are empty.  You'll now fill in 
 
 ## Wave 3 - Spec'ing out the Deck class
 
-We also have a file for a `Deck` class.  In the `deck_spec.rb` file you will write specs to ensure that Deck objects can be instantiated and Cards can be drawn.  Further you will test to ensure that the `shuffle` method can be called.  Don't try to test for Randomness at this point.  You can assume that all decks are created with 52 cards of the 4 standard suits.  You should have a minimum of 4 tests.  
+
+Now you'll write code to spec out the Deck class and write the implementation.  
+
+At a minimum a Deck should:
+* Be able to be instantiated.
+* Be created with 52 Card objects as attributes.
+* Have a `shuffle` method
+  * Don't try to test for randomness at this point, it's tough to test for something random, just make sure the method can be called.
+* Have a method called `draw` which removes a Card from the Deck and returns the removed Card.  
+* Have a `count` method which returns the number of cards in the Deck.
+
+You should have a minimum of 5 tests.
 
 Think about:
 - What edge cases could exist when using a deck of cards?
