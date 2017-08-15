@@ -7,7 +7,7 @@ This exercise is designed to enable you to:
 
 ## Overview
 
-You've been introduced to TDD and testing.  Now we're going to be writing tests.  We'll start by writing code to satisfy existing tests, and then fill in empty specs to write our own tests, finish by desiging a few tests yourself.
+You've been introduced to TDD and testing.  Now we're going to be writing tests.  We'll start by writing code to satisfy existing tests, and then fill in empty specs to write our own tests, finish by designing a few tests yourself.
 
 ## Wave 1 - Getting Card To Pass
 
