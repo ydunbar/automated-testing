@@ -14,6 +14,8 @@ describe Card do
     end
 
     it "Raises an ArgumentError for invalid parameters" do
+      # To raise an ArgumentError in card.rb
+      # raise ArgumentError.new
       proc {Card.new(0, :diamonds)}.must_raise ArgumentError
       proc {Card.new(14, :diamonds)}.must_raise ArgumentError
       proc {Card.new(14, :clovers)}.must_raise ArgumentError
