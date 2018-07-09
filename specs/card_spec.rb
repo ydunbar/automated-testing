@@ -8,7 +8,7 @@ describe Card do
       [:hearts, :spades, :clubs, :diamonds].each do |suit|
         (1..13).each do |value|
           card = Card.new(value, suit)
-          card.must_be_instance_of Card
+          expect(card).must_be_instance_of Card
         end
       end
     end
@@ -16,9 +16,9 @@ describe Card do
     it "Raises an ArgumentError for invalid parameters" do
       # To raise an ArgumentError in card.rb
       # raise ArgumentError.new
-      proc {Card.new(0, :diamonds)}.must_raise ArgumentError
-      proc {Card.new(14, :diamonds)}.must_raise ArgumentError
-      proc {Card.new(14, :clovers)}.must_raise ArgumentError
+      expect {Card.new(0, :diamonds)}.must_raise ArgumentError
+      expect {Card.new(14, :diamonds)}.must_raise ArgumentError
+      expect {Card.new(14, :clovers)}.must_raise ArgumentError
     end
   end
 
