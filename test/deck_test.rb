@@ -1,6 +1,4 @@
-
-
-require_relative 'spec_helper'
+require_relative 'test_helper'
 
 describe Deck do
   # Write tests for the Deck class.

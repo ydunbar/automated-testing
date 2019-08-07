@@ -1,5 +1,4 @@
-
-require_relative 'spec_helper'
+require_relative 'test_helper'
 
 describe Card do
   describe "You can create a Card instance" do
