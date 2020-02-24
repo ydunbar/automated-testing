@@ -26,6 +26,8 @@ describe Card do
     it "to_s returns a readable String value logically for values 2-10" do
       # Test to ensure that to_s works for cards values 2-10
       # for example:  "2 of diamonds"
+      card = Card.new(2, :diamonds)
+      expect(card.to_s).must_be_kind_of String
     end
 
     it "to_s returns a readable String value for Ace, Jack, Queen, King" do
@@ -34,6 +36,10 @@ describe Card do
       # The current implementation of to_s does not address this feature
       # Write the test, see it fail, then modify to_s to make it pass!
       # (Consider writing a helper method!)
+      card_a = Card.new(1, :hearts)
+      card_b = Card.new(11, :hearts)
+      expect(card_a.to_s).must_equal "Ace of hearts"
+      expect(card_b.to_s).must_equal "Queen of hearts"
     end
   end
 
@@ -41,12 +47,15 @@ describe Card do
 
     it "Can retrieve the value of the card using a `.value`." do
       # ensure that `.value works as expected`
+      card = Card.new(2, :diamonds)
+      expect(card.value).must_equal 2
     end
 
     it "Can retrieve the value of the card using a `.suit`." do
       # ensure that `.suit works as expected returning the symbol of the suit`
-
+      card = Card.new(2, :diamonds)
+      expect(card.suit).must_equal :diamonds
+      
     end
   end
-
 end
